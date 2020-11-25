@@ -23,7 +23,7 @@
         android:contentDescription="@string/texto_inicial"
         android:fontFamily="@font/mclaren"
         android:text="@string/top_5_de_musicas"
-        android:textColor="#D3491E"
+        android:textColor="#FF3D01"
         android:textColorHighlight="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="italic"

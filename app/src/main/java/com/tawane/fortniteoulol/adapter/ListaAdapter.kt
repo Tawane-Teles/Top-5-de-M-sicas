@@ -9,10 +9,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.tawane.fortniteoulol.R
 import com.tawane.fortniteoulol.model.ItemList
+import com.tawane.fortniteoulol.utils.Constant.ALOK
+import com.tawane.fortniteoulol.utils.Constant.COLDPLAY
+import com.tawane.fortniteoulol.utils.Constant.DRAKE
+import com.tawane.fortniteoulol.utils.Constant.LIU
+import com.tawane.fortniteoulol.utils.Constant.THEKILLERS
 
 class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
         RecyclerView.Adapter<ListaAdapter.ViewHolder>() {
@@ -36,27 +40,27 @@ class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
         holder.imagem.setBackgroundResource(item.image)
         holder.subtxt.text = item.subTitulo
 
-        if (holder.name.text == "Liu") {
+        if (holder.name.text == LIU) {
             holder.name.setOnClickListener {
                 openNetwork("", "", "https://www.youtube.com/watch?v=a4g96HW1VuA", ctx)
             }
         }
-        if (holder.name.text == "Alok") {
+        if (holder.name.text == ALOK) {
             holder.name.setOnClickListener {
                 openNetwork("", "", "https://www.youtube.com/watch?v=JVpTp8IHdEgI", ctx)
             }
         }
-        if (holder.name.text == "Coldplay") {
+        if (holder.name.text == COLDPLAY) {
             holder.name.setOnClickListener {
                 openNetwork("", "", "https://www.youtube.com/watch?v=VPRjCeoBqrI", ctx)
             }
         }
-        if (holder.name.text == "The Killers") {
+        if (holder.name.text == THEKILLERS) {
             holder.name.setOnClickListener {
                 openNetwork("", "", "https://www.youtube.com/watch?v=RIZdjT1472Y", ctx)
             }
         }
-        if (holder.name.text == "Drake") {
+        if (holder.name.text == DRAKE) {
             holder.name.setOnClickListener {
                 openNetwork("", "", "https://www.youtube.com/watch?v=uxpDa-c-4Mc", ctx)
             }
