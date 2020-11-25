@@ -1,17 +1,21 @@
 package com.tawane.fortniteoulol.adapter
 
+import android.content.ActivityNotFoundException
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.tawane.fortniteoulol.R
 import com.tawane.fortniteoulol.model.ItemList
 
 class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
-    RecyclerView.Adapter<ListaAdapter.ViewHolder>() {
+        RecyclerView.Adapter<ListaAdapter.ViewHolder>() {
 
     private var nameList: List<ItemList> = ArrayList()
 
@@ -31,6 +35,61 @@ class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
         holder.name.text = item.name
         holder.imagem.setBackgroundResource(item.image)
         holder.subtxt.text = item.subTitulo
+
+        if (holder.name.text == "Liu") {
+            holder.name.setOnClickListener {
+                openNetwork("", "", "https://www.youtube.com/watch?v=a4g96HW1VuA", ctx)
+            }
+        }
+        if (holder.name.text == "Alok") {
+            holder.name.setOnClickListener {
+                openNetwork("", "", "https://www.youtube.com/watch?v=JVpTp8IHdEgI", ctx)
+            }
+        }
+        if (holder.name.text == "Coldplay") {
+            holder.name.setOnClickListener {
+                openNetwork("", "", "https://www.youtube.com/watch?v=VPRjCeoBqrI", ctx)
+            }
+        }
+        if (holder.name.text == "The Killers") {
+            holder.name.setOnClickListener {
+                openNetwork("", "", "https://www.youtube.com/watch?v=RIZdjT1472Y", ctx)
+            }
+        }
+        if (holder.name.text == "Drake") {
+            holder.name.setOnClickListener {
+                openNetwork("", "", "https://www.youtube.com/watch?v=uxpDa-c-4Mc", ctx)
+            }
+        }
+    }
+
+    private fun openNetwork(
+            appPackage: String,
+            appAddress: String,
+            webAddress: String,
+            context: Context
+    ) {
+
+        val uri = Uri.parse(appAddress)
+        val intent = Intent(Intent.ACTION_VIEW, uri)
+
+        intent.setPackage(appPackage)
+
+        try {
+            context.startActivity(intent)
+        } catch (e: ActivityNotFoundException) {
+            /*
+             * Se não houver o aplicativo da rede
+             * social acionada, então abra a página
+             * no navegador padrão do aparelho, Web.
+             * */
+            context.startActivity(
+                    Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse(webAddress)
+                    )
+            )
+        }
     }
 
     // Devolve quantidade de itens do nameList
