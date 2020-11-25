@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Fortnite ou Lol</string>
+    <string name="app_name">TOP 5 DE MUSICAS</string>
     <string name="imagem_fortlol_inicial">imagem fortlol inicial</string>
     <string name="texto_inicial">texto inicial</string>
-    <string name="fortlol">FORTLOL</string>
+    <string name="fortlol">TOP 5 DE MUSICAS</string>
+    <string name="top_5_de_musicas">TOP 5 DE MUSICAS</string>
 </resources>

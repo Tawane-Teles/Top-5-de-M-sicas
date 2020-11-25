@@ -31,37 +31,37 @@ class MainActivity : AppCompatActivity() {
     private fun getList() {
         nameList.add(
             ItemList(
-                name = "jinx",
-                image = R.drawable.img_jynxperso1,
-                subTitulo = "Criminosa, impulsiva e maníaca."
+                name = "Liu",
+                image = R.drawable.img_liu,
+                subTitulo = "Nave Espacial"
             )
         )
         nameList.add(
             ItemList(
-                name = "Akali",
-                image = R.drawable.img_akaliperso2,
-                subTitulo = "Perigosa, assassina e sozinha."
+                name = "Alok",
+                image = R.drawable.img_alok,
+                subTitulo = "Hear Me Now"
             )
         )
         nameList.add(
             ItemList(
-                name = "Miss Fortune",
-                image = R.drawable.img_missperso3,
-                subTitulo = "Impiedosa, vingativa e sedutora"
+                name = "Coldplay",
+                image = R.drawable.img_coldplay,
+                subTitulo = "A Sky Full Of Stars"
             )
         )
         nameList.add(
             ItemList(
-                name = "Raven",
-                image = R.drawable.img_ravenperso4,
-                subTitulo = "Exilado, guerreiro e sombrio"
+                name = "The Killers",
+                image = R.drawable.img_thekillers,
+                subTitulo = "Human"
             )
         )
         nameList.add(
             ItemList(
-                name = "Fable",
-                image = R.drawable.img_fableperso5,
-                subTitulo = "Simpática, doce e vulnerável"
+                name = "Drake",
+                image = R.drawable.img_drake,
+                subTitulo = "Hotline Bling"
             )
         )
     }
