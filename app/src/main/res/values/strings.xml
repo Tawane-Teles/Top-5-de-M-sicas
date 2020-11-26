@@ -4,4 +4,8 @@
     <string name="texto_inicial">texto inicial</string>
     <string name="fortlol">TOP 5 DE MUSICAS</string>
     <string name="top_5_de_musicas">TOP 5 DE MUSICAS</string>
+    <string name="esse_botao_e_de_entrar">esse botao e de entrar</string>
+    <string name="button">Button</string>
+    <string name="entrar">Entrar</string>
+    <string name="clique_no_nome_para_entrar">Clique no nome para entrar</string>
 </resources>
