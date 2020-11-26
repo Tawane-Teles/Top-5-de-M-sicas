@@ -1,10 +1,9 @@
 package com.tawane.fortniteoulol.utils
 
 object Constant {
-    const val LIU = "Liu"
-    const val ALOK = "Alok"
-    const val COLDPLAY = "Coldplay"
-    const val THEKILLERS = "The Killers"
-    const val DRAKE = "Drake"
+    const val MANHOSINHO = "Manhosinho"
+    const val CELINHA = "Celinha"
+    const val PIRULITINHA = "Pirulitinha"
+    const val ISOLDINHA = "Isoldinha"
 
 }

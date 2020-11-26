@@ -6,11 +6,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.tawane.fortniteoulol.adapter.ListaAdapter
 import com.tawane.fortniteoulol.model.ItemList
-import com.tawane.fortniteoulol.utils.Constant.ALOK
-import com.tawane.fortniteoulol.utils.Constant.COLDPLAY
-import com.tawane.fortniteoulol.utils.Constant.DRAKE
-import com.tawane.fortniteoulol.utils.Constant.LIU
-import com.tawane.fortniteoulol.utils.Constant.THEKILLERS
+import com.tawane.fortniteoulol.utils.Constant.CELINHA
+import com.tawane.fortniteoulol.utils.Constant.ISOLDINHA
+import com.tawane.fortniteoulol.utils.Constant.MANHOSINHO
+import com.tawane.fortniteoulol.utils.Constant.PIRULITINHA
 
 
 class MainActivity : AppCompatActivity() {
@@ -36,37 +35,30 @@ class MainActivity : AppCompatActivity() {
     private fun getList() {
         nameList.add(
             ItemList(
-                name = LIU,
-                image = R.drawable.img_liu,
-                subTitulo = "Nave Espacial"
+                name = MANHOSINHO,
+                image = R.drawable.img_gatoum,
+                subTitulo = "Adora um colinho \uD83D\uDC3E "
             )
         )
         nameList.add(
             ItemList(
-                name = ALOK,
-                image = R.drawable.img_alok,
-                subTitulo = "Hear Me Now"
+                name = CELINHA,
+                image = R.drawable.img_gatodois,
+                subTitulo = "Mais discreta \uD83D\uDC3E"
             )
         )
         nameList.add(
             ItemList(
-                name = COLDPLAY,
-                image = R.drawable.img_coldplay,
-                subTitulo = "A Sky Full Of Stars"
+                name = PIRULITINHA,
+                image = R.drawable.img_gatotres,
+                subTitulo = "Mia por petisquinho \uD83D\uDC3E"
             )
         )
         nameList.add(
             ItemList(
-                name = THEKILLERS,
-                image = R.drawable.img_thekillers,
-                subTitulo = "Human"
-            )
-        )
-        nameList.add(
-            ItemList(
-                name = DRAKE,
-                image = R.drawable.img_drake,
-                subTitulo = "Hotline Bling"
+                name = ISOLDINHA,
+                image = R.drawable.img_gatoquatro,
+                subTitulo = "Muito preguiçosinha \uD83D\uDC3E"
             )
         )
     }

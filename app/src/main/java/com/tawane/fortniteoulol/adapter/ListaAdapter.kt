@@ -13,14 +13,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.tawane.fortniteoulol.R
 import com.tawane.fortniteoulol.model.ItemList
-import com.tawane.fortniteoulol.utils.Constant.ALOK
-import com.tawane.fortniteoulol.utils.Constant.COLDPLAY
-import com.tawane.fortniteoulol.utils.Constant.DRAKE
-import com.tawane.fortniteoulol.utils.Constant.LIU
-import com.tawane.fortniteoulol.utils.Constant.THEKILLERS
+import com.tawane.fortniteoulol.utils.Constant.MANHOSINHO
+import com.tawane.fortniteoulol.utils.Constant.CELINHA
+import com.tawane.fortniteoulol.utils.Constant.PIRULITINHA
+import com.tawane.fortniteoulol.utils.Constant.ISOLDINHA
 
 class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
-        RecyclerView.Adapter<ListaAdapter.ViewHolder>() {
+    RecyclerView.Adapter<ListaAdapter.ViewHolder>() {
 
     private var nameList: List<ItemList> = ArrayList()
 
@@ -41,38 +40,33 @@ class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
         holder.imagem.setBackgroundResource(item.image)
         holder.subtxt.text = item.subTitulo
 
-        if (holder.name.text == LIU) {
+        if (holder.name.text == MANHOSINHO) {
             holder.name.setOnClickListener {
-                openNetwork("", "", "https://www.youtube.com/watch?v=a4g96HW1VuA", ctx)
+                openNetwork("", "", "https://www.youtube.com/watch?v=mrj5rm5EC0c", ctx)
             }
         }
-        if (holder.name.text == ALOK) {
+        if (holder.name.text == CELINHA) {
             holder.button.setOnClickListener {
-                openNetwork("", "", "https://www.youtube.com/watch?v=JVpTp8IHdEgI", ctx)
+                openNetwork("", "", "https://www.youtube.com/watch?v=QF-j1dKDBP0", ctx)
             }
         }
-        if (holder.name.text == COLDPLAY) {
+        if (holder.name.text == PIRULITINHA) {
             holder.button.setOnClickListener {
-                openNetwork("", "", "https://www.youtube.com/watch?v=VPRjCeoBqrI", ctx)
+                openNetwork("", "", "https://www.youtube.com/watch?v=U48d7MnF8SY", ctx)
             }
         }
-        if (holder.name.text == THEKILLERS) {
+        if (holder.name.text == ISOLDINHA) {
             holder.button.setOnClickListener {
-                openNetwork("", "", "https://www.youtube.com/watch?v=RIZdjT1472Y", ctx)
-            }
-        }
-        if (holder.name.text == DRAKE) {
-            holder.button.setOnClickListener {
-                openNetwork("", "", "https://www.youtube.com/watch?v=uxpDa-c-4Mc", ctx)
+                openNetwork("", "", "https://www.youtube.com/watch?v=zkBcr13UzrI", ctx)
             }
         }
     }
 
     private fun openNetwork(
-            appPackage: String,
-            appAddress: String,
-            webAddress: String,
-            context: Context
+        appPackage: String,
+        appAddress: String,
+        webAddress: String,
+        context: Context
     ) {
 
         val uri = Uri.parse(appAddress)
@@ -89,10 +83,10 @@ class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
              * no navegador padrão do aparelho, Web.
              * */
             context.startActivity(
-                    Intent(
-                            Intent.ACTION_VIEW,
-                            Uri.parse(webAddress)
-                    )
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse(webAddress)
+                )
             )
         }
     }
@@ -104,9 +98,9 @@ class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
 
     // Aqui é a criação dos itens do viewholder
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var name = view.findViewById<TextView>(R.id.textoTitulo)!!
-        var subtxt = view.findViewById<TextView>(R.id.txt_sub)!!
+        var name = view.findViewById<TextView>(R.id.texto_logo)!!
+        var subtxt = view.findViewById<TextView>(R.id.texto_logo)!!
         var imagem = view.findViewById<ImageView>(R.id.imgFortlol)!!
-        var button = view.findViewById<Button>(R.id.button)
+        var button = view.findViewById<Button>(R.id.button_links)
     }
 }

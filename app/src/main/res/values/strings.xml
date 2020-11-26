@@ -1,12 +1,11 @@
 <resources>
-    <string name="app_name">TOP 5 DE MUSICAS</string>
+    <string name="app_name">BANHO DE GATO</string>
     <string name="imagem_fortlol_inicial">imagem fortlol inicial</string>
     <string name="texto_inicial">texto inicial</string>
-    <string name="fortlol">TOP 5 DE MUSICAS</string>
-    <string name="top_5_de_musicas">TOP 5 DE MUSICAS</string>
+    <string name="fortlol">BANHO DE GATO 🐾</string>
+    <string name="top_5_de_musicas">BANHO DE GATO 🐾 </string>
     <string name="esse_botao_e_de_entrar">esse botao e de entrar</string>
+    <string name="banho_de_gato">BANHO DE GATO 🐾</string>
     <string name="button">Button</string>
-    <string name="entrar">Entrar</string>
-    <string name="clique_no_nome_para_entrar">Clique no nome para entrar</string>
-    <string name="assista_ao_v_deo">Assista ao vídeo!</string>
+    <string name="clique_para_ver_o_video">Clique para ver o video!</string>
 </resources>
