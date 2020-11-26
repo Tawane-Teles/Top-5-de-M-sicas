@@ -7,6 +7,7 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -46,22 +47,22 @@ class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
             }
         }
         if (holder.name.text == ALOK) {
-            holder.name.setOnClickListener {
+            holder.button.setOnClickListener {
                 openNetwork("", "", "https://www.youtube.com/watch?v=JVpTp8IHdEgI", ctx)
             }
         }
         if (holder.name.text == COLDPLAY) {
-            holder.name.setOnClickListener {
+            holder.button.setOnClickListener {
                 openNetwork("", "", "https://www.youtube.com/watch?v=VPRjCeoBqrI", ctx)
             }
         }
         if (holder.name.text == THEKILLERS) {
-            holder.name.setOnClickListener {
+            holder.button.setOnClickListener {
                 openNetwork("", "", "https://www.youtube.com/watch?v=RIZdjT1472Y", ctx)
             }
         }
         if (holder.name.text == DRAKE) {
-            holder.name.setOnClickListener {
+            holder.button.setOnClickListener {
                 openNetwork("", "", "https://www.youtube.com/watch?v=uxpDa-c-4Mc", ctx)
             }
         }
@@ -106,5 +107,6 @@ class ListaAdapter(nameList: List<ItemList>, private var ctx: Context) :
         var name = view.findViewById<TextView>(R.id.textoTitulo)!!
         var subtxt = view.findViewById<TextView>(R.id.txt_sub)!!
         var imagem = view.findViewById<ImageView>(R.id.imgFortlol)!!
+        var button = view.findViewById<Button>(R.id.button)
     }
 }
